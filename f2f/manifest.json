@@ -1,0 +1,13 @@
+{
+	"name": "Find a Grave To Familysearch",
+	"description": "1 Click copy information from findagrave for pasting in family search",
+	"version": "1.0",
+	"manifest_version": 3,
+	"background": {
+		"service_worker": "background.js"
+	},
+	"action": {
+		"default_title": "Find A Grave To Familysearch"
+	},
+	"permissions": ["storage", "contextMenus", "scripting", "activeTab","tabs","clipboardRead","notifications"]
+}
