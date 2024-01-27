@@ -3,7 +3,7 @@ chrome.tabs.onActivated.addListener(function(tab) {
 //console.log('here', tab, self.clients)
 	chrome.tabs.query({active: true, currentWindow:true},(info)=>{
 		//console.log('..',info,info[0].url);
-		if(info[0].url.includes('familysearch.com') || info[0].url.includes('findagrave.com')){
+		if(info[0].url.includes('familysearch.org') || info[0].url.includes('findagrave.com')){
 			//console.log('enable')
 			chrome.action.enable();
 		}else{
@@ -20,7 +20,6 @@ chrome.action.onClicked.addListener(
 		target: {tabId: tab.id},
 		files: ['copy.js']
 	},()=>{
-		console.log('ggggg')
 		chrome.notifications.create('copied', {
 			type: 'basic',
 			iconUrl: 'copy.png',
