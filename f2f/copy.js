@@ -22,8 +22,8 @@ localStorage.setItem('bio',document.getElementById('fullBio').textContent);*/
 		'pob': document.getElementById('birthLocationLabel') ? document.getElementById('birthLocationLabel').textContent : '',
 		'dod': dod.slice(0,dod.indexOf(' (')),
 		'pod': document.getElementById('deathLocationLabel') ? document.getElementById('deathLocationLabel').textContent: '',
-	'burial': document.getElementById('cemeteryNameLabel') ? `${document.getElementById('cemeteryNameLabel').textContent}, ${document.getElementById('cemeteryCityName').textContent}, ${document.getElementById('cemeteryCountyName').textContent}, ${document.getElementById('cemeteryStateName').textContent}, ${document.getElementById('cemeteryCountryName').textContent}` : '',
-		'bio': document.getElementById('fullBio').textContent,
+		'burial': document.getElementById('cemeteryNameLabel') ? `${document.getElementById('cemeteryNameLabel').textContent}, ${document.getElementById('cemeteryCityName').textContent}, ${document.getElementById('cemeteryCountyName').textContent}, ${document.getElementById('cemeteryStateName').textContent}, ${document.getElementById('cemeteryCountryName').textContent}` : '',
+		'bio': document.getElementById('fullBio') ? document.getElementById('fullBio').textContent : '',
 		'memorial': document.getElementById('memNumberLabel').textContent
 	},()=>{
 		console.log('saved');
